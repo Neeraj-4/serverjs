@@ -9,7 +9,8 @@ const artistSchema = new mongoose.Schema({
     },
     url:String,
     file:String,
-    songName:String,
+    title:String,
+    duration: String,
     artist:String
     
 

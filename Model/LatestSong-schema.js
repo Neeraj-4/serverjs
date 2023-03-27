@@ -1,7 +1,12 @@
 import mongoose from "mongoose";
 
-const categorySchema = new mongoose.Schema({
+const LatestSongSchema = new mongoose.Schema({
     id:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    url:{
         type:String,
         required:true,
         unique:true
@@ -22,9 +27,9 @@ const categorySchema = new mongoose.Schema({
         duration: String,
         artist:String
     }]
+    
    
-  
 });
-const Category = mongoose.models.category || mongoose.model('category', categorySchema);
+const LatestSong = mongoose.models.latestSong || mongoose.model('latestSong', LatestSongSchema);
 
-export default Category;
+export default LatestSong;
