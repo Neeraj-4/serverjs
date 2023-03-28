@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 const DB_USERNAME = process.env.DB_USERNAME;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_NAME = process.env.DB_NAME;
-const MONGODB_URI = process.env.MONGODB_URI || `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@testdb4.wpwvkte.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
+const MONGODB_URI = process.env.MONGODB_URI || `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.b4twe23.mongodb.net/${DB_NAME}?retryWrites=true&w=majorit`;
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
